@@ -37,10 +37,10 @@ export default function SignUp() {
             .then((data) => data.json())
             .then((data) => {
                 if (data.message === "Username already exists") {
-                    console.log("username already exists");
+                    alert("username already exists");
                 } else {
                     console.log("login successfull");
-                    toast.success("Registration Successful");
+                    alert("Registration Successful");
                     navigate('/users/login')
                 }
             })

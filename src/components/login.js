@@ -27,11 +27,11 @@ export default function(){
             })
 
             if (data.status === 401) {
-                toast.error ("Login Failed");
+                alert ("Login Failed");
                 console.log("Login Failed");
             } else {
                 const result = await data.json();
-                toast.success("Login Success");
+                alert("Login Success");
                 localStorage.setItem("token",result.token)
                 navigate("/")
             }
