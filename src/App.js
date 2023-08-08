@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Login from './components/login';
-import { Home } from './components/Home';
+import  Home  from './components/Home';
 import SignUp from './components/SignUp';
 
 
